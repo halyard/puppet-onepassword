@@ -6,12 +6,6 @@ class onepassword::config (
       domain => $domain
   }
 
-  boxen::osx_defaults { 'Prevent 1Password update checks':
-    key   => 'CheckForSoftwareUpdatesEnabled',
-    value => 0,
-    type  => 'integer'
-  }
-
   boxen::osx_defaults { 'Enable 1Password watchtower':
     key   => 'watchtowerService',
     value => 1,
@@ -20,12 +14,6 @@ class onepassword::config (
 
   boxen::osx_defaults { "Don't animate fill for 1Password":
     key   => 'animateFill',
-    value => 0,
-    type  => 'integer'
-  }
-
-  boxen::osx_defaults { '1Password: hide backup notifications':
-    key   => 'ShowBackupCompletedNotifications',
     value => 0,
     type  => 'integer'
   }
