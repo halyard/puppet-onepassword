@@ -17,4 +17,10 @@ class onepassword::config (
     value => 0,
     type  => 'integer'
   }
+
+  boxen::osx_defaults { "Use newer OPVault format":
+    key   => 'useOPVaultFormatByDefault',
+    value => true,
+    type  => 'boolean'
+  }
 }
