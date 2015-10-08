@@ -18,7 +18,7 @@ class onepassword (
   osx_login_item { '1Password 5':
     path   => $install_path
   } ~>
-  exec { "launch 1password":
+  exec { 'launch 1password':
     command     => "/usr/bin/open '${install_path}'",
     refreshonly => true,
   }

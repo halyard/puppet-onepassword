@@ -1,0 +1,22 @@
+{
+  "name": "halyard-onepassword",
+  "version": "0.0.5",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Configure onepassword via Boxen",
+  "source": "https://github.com/halyard/puppet-onepassword",
+  "project_page": "https://github.com/halyard/puppet-onepassword",
+  "issues_url": "https://github.com/halyard/puppet-onepassword/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Darwin",
+      "operatingsystemmajrelease": [
+        "14",
+        "15"
+      ]
+    }
+  ]
+}

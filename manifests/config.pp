@@ -1,3 +1,4 @@
+# Configure 1Password to play nice and be happy
 class onepassword::config (
   $domain = '2BUA8C4S2C.com.agilebits.onepassword4-helper'
 ) {
@@ -18,7 +19,7 @@ class onepassword::config (
     type  => 'integer'
   }
 
-  boxen::osx_defaults { "Use newer OPVault format":
+  boxen::osx_defaults { 'Use newer OPVault format':
     key   => 'useOPVaultFormatByDefault',
     value => true,
     type  => 'boolean'
