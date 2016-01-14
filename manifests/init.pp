@@ -8,7 +8,7 @@
 #   Explanation of what this parameter affects and what it defaults to.
 #
 class onepassword (
-  $install_path = "/Users/${::boxen_user}/Applications/1Password 5.app"
+  $install_path = "/Users/${::boxen_user}/Applications/1Password.app"
 ) {
   if $::vault_synced {
     class { '::onepassword::config': } ->
@@ -16,7 +16,7 @@ class onepassword (
       provider => 'brewcask',
       require  => Homebrew::Tap['halyard/casks']
     } ->
-    osx_login_item { '1Password 5':
+    osx_login_item { '1Password':
       path   => $install_path
       } ~>
     exec { 'launch 1password':
