@@ -16,7 +16,7 @@ class onepassword (
       provider => 'brewcask',
       require  => Homebrew::Tap['halyard/casks']
     } ->
-    osx_login_item { '1Password':
+    osx_login_item { '1Password 6':
       path   => $install_path
       } ~>
     exec { 'launch 1password':
